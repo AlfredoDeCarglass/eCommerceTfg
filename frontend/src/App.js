@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <div>
         <header>
-          <Link to="/">eCommerce</Link>
+          <Link to="/">laManchaCommerce</Link>
         </header>
         <main>
           <Routes>
