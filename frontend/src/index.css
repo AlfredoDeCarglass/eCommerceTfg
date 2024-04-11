@@ -7,15 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: #404040;
-  padding: 1rem;
+.site-container {
+  min-height: 100vh;
 }
 
-header a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+main {
+  flex: 1;
 }
 
 .products {
@@ -35,4 +32,27 @@ header a {
 }
 .product-info {
   padding: 1rem;
+}
+
+footer {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-info a {
+  color: #cfd8e1;
+}
+.footer-info a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #232f3e;
+  padding: 1rem;
+}
+header a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
 }
