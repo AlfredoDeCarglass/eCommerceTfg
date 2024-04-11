@@ -47,6 +47,14 @@ footer {
   text-decoration: underline;
 }
 
+.rating span {
+  color: #ffc000;
+}
+.btn-primary {
+  background-color: #f0c040;
+  color: #000000;
+}
+
 header {
   background-color: #232f3e;
   padding: 1rem;
