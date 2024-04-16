@@ -17,6 +17,7 @@ import {
   faEnvelope,
   faMapMarker,
   faHome,
+  faShoppingCart,
 } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { Store } from './Store';
@@ -44,12 +45,16 @@ function App() {
               </LinkContainer>
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
-                  Carréton
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
-                      {cart.cartItems.length}
+                      {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
                     </Badge>
                   )}
+                  Carréton
+                  <FontAwesomeIcon
+                    icon={faShoppingCart}
+                    style={{ marginLeft: '5px' }}
+                  />
                 </Link>
               </Nav>
             </Container>
