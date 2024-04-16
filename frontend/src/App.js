@@ -10,6 +10,12 @@ import {
   faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faPhone,
+  faEnvelope,
+  faMapMarker,
+  faHome,
+} from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -19,12 +25,21 @@ function App() {
           <Navbar variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>laManchaCommerce</Navbar.Brand>
+                <Navbar.Brand>
+                  <img
+                    src="sancho.ico"
+                    width="35"
+                    height="35"
+                    className="d-inline-block align-top"
+                    alt="Logo"
+                  />{' '}
+                  laManchaCommerce
+                </Navbar.Brand>
               </LinkContainer>
             </Container>
           </Navbar>
         </header>
-        <main>
+        <main className="mt-3 mb-3">
           <Container>
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
@@ -37,12 +52,34 @@ function App() {
             <div className="row">
               <div className="col-md-6">
                 <div className="footer-info">
-                  <p className="mb-0">laManchaCommerce</p>
-                  <p className="mb-0">Dirección: Corral de Almaguer, España</p>
                   <p className="mb-0">
-                    Correo electrónico: alfredo.formacioning@gmail.com
+                    <FontAwesomeIcon
+                      icon={faHome}
+                      style={{ marginRight: '5px' }}
+                    />
+                    laManchaCommerce
                   </p>
-                  <p className="mb-0">Teléfono: +123456789</p>
+                  <p className="mb-0">
+                    <FontAwesomeIcon
+                      icon={faMapMarker}
+                      style={{ marginRight: '5px' }}
+                    />
+                    Dirección: Sierra del Gollino, Toledo, España, 45000
+                  </p>
+                  <p className="mb-0">
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      style={{ marginRight: '5px' }}
+                    />
+                    Correo electrónico: laManchaCommerce@xxxxx.com
+                  </p>
+                  <p className="mb-0">
+                    <FontAwesomeIcon
+                      icon={faPhone}
+                      style={{ marginRight: '5px' }}
+                    />
+                    Teléfono: +123456789
+                  </p>
                 </div>
               </div>
               <div className="social-icons col-md-6 d-flex justify-content-md-end justify-content-center">

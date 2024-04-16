@@ -64,3 +64,7 @@ header a {
   font-weight: bold;
   text-decoration: none;
 }
+
+.img-large {
+  max-width: 100%;
+}
