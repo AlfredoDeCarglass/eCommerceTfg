@@ -22,7 +22,7 @@ function Product(props) {
         <Card.Text>
           {product.price} <strong>€</strong>
         </Card.Text>
-        <Button>Añadir al carro</Button>
+        <Button>Añadir al carréton</Button>
       </Card.Body>
     </Card>
   );
