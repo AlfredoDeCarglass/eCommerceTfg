@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Alfredo',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
+      //_id: '1',
       name: 'Tempranillo Vino Tinto',
       slug: 'vino-tinto-tempranillo',
       category: 'Vinos',
@@ -17,7 +33,7 @@ const data = {
       certificaciones: 'D.O.P La Mancha',
     },
     {
-      _id: '2',
+      //  _id: '2',
       name: 'Vino Tinto Reserva',
       slug: 'vino-tinto-reserva',
       category: 'Vinos',
@@ -33,7 +49,7 @@ const data = {
       certificaciones: 'Trofeo de la Vendimia Dorada',
     },
     {
-      _id: '3',
+      //_id: '3',
       name: 'Vino Tinto Roble Selección',
       slug: 'vino-tinto-roble',
       category: 'Vinos',
@@ -49,7 +65,7 @@ const data = {
       certificaciones: 'Trofeo de la Vendimia Dorada',
     },
     {
-      _id: '4',
+      //_id: '4',
       name: 'Vino Tinto Graciano',
       slug: 'vino-tinto-graciano',
       category: 'Vinos',
@@ -65,7 +81,7 @@ const data = {
       certificaciones: 'Trofeo de la Vendimia Dorada',
     },
     {
-      _id: '5',
+      //_id: '5',
       name: 'Vino Tinto Syrah',
       slug: 'vino-tinto-syrah',
       category: 'Vinos',
@@ -81,7 +97,7 @@ const data = {
       certificaciones: 'Trofeo de la Vendimia Dorada',
     },
     {
-      _id: '6',
+      // _id: '6',
       name: 'Vino Tinto Cabernet Sauvignon',
       slug: 'vino-tinto-cabernet',
       category: 'Vinos',
