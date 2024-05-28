@@ -1,4 +1,4 @@
-# 🛍️ Proyecto eCommerce MERN
+# 🛍️ Proyecto laManchaCommerce
 
 Bienvenido al proyecto de eCommerce desarrollado con la pila MERN (MongoDB, Express, React y Node.js). Este proyecto proporciona una plataforma de comercio electrónico con características esenciales como gestión de productos, usuarios, carritos de compra y órdenes.
 
@@ -29,40 +29,40 @@ Bienvenido al proyecto de eCommerce desarrollado con la pila MERN (MongoDB, Expr
 ## 🚀 Instalación
 
 1. Clona el repositorio:
-    ```bash
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    ```
+   ```bash
+   git clone https://github.com/acreft/eCommerceTfg.git
+   ```
 2. Navega al directorio del proyecto:
-    ```bash
-    cd tu_repositorio
-    ```
+   ```bash
+   cd tu_repositorio
+   ```
 3. Instala las dependencias del backend:
-    ```bash
-    cd backend
-    npm install
-    ```
+   ```bash
+   cd backend
+   npm install
+   ```
 4. Instala las dependencias del frontend:
-    ```bash
-    cd ../frontend
-    npm install
-    ```
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 5. Crea un archivo `.env` en el directorio `backend` con las siguientes variables:
-    ```env
-    NODE_ENV=development
-    PORT=5000
-    MONGO_URI=tu_mongodb_uri
-    JWT_SECRET=tu_secreto_jwt
-    ```
+   ```env
+   NODE_ENV=development
+   PORT=5000
+   MONGO_URI=tu_mongodb_uri
+   JWT_SECRET=tu_secreto_jwt
+   ```
 6. Ejecuta el servidor backend:
-    ```bash
-    cd backend
-    npm run dev
-    ```
+   ```bash
+   cd backend
+   npm start
+   ```
 7. Ejecuta el servidor frontend:
-    ```bash
-    cd ../frontend
-    npm start
-    ```
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
 ## 📋 Uso
 
@@ -72,7 +72,7 @@ Bienvenido al proyecto de eCommerce desarrollado con la pila MERN (MongoDB, Expr
 
 ## 📸 Capturas de Pantalla
 
-![Captura de pantalla de la página principal](https://via.placeholder.com/800x400.png?text=Captura+de+Pantalla+Principal)
+![Captura de pantalla de la página principal](doc/img/home.png)
 
 ## 🤝 Contribución
 
@@ -84,13 +84,10 @@ Bienvenido al proyecto de eCommerce desarrollado con la pila MERN (MongoDB, Expr
 4. Envía tus cambios a tu fork (`git push origin feature/nueva-caracteristica`).
 5. Abre un Pull Request.
 
-## 📜 Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
 ## 📧 Contacto
 
 Para cualquier pregunta o comentario, por favor, contacta a [tu_email@ejemplo.com](mailto:tu_email@ejemplo.com).
 
 ---
+
 ¡Gracias por visitar nuestro proyecto! 🎉
