@@ -199,3 +199,15 @@ small {
   margin-top: 5px;
   color: #888;
 }
+
+.icono-bizum {
+  width: 6em; /* Ajusta el tamaño para Bizum */
+  height: 2.5em; /* Ajusta el tamaño para Bizum */
+  color: #4caf50; /* Color para Bizum */
+}
+
+.icono-paypal {
+  width: 6em; /* Ajusta el tamaño para PayPal */
+  height: 2.5em; /* Ajusta el tamaño para PayPal */
+  color: #0070ba; /* Color para PayPal */
+}

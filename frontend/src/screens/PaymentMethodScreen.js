@@ -41,22 +41,38 @@ export default function PaymentMethodScreen() {
             <Form.Check
               type="radio"
               id="PayPal"
-              label="PayPal"
+              label={
+                <>
+                  <img
+                    src="./images/PayPal.svg"
+                    alt="PayPal"
+                    className="icono-paypal"
+                  />{' '}
+                </>
+              }
               value="PayPal"
               checked={paymentMethodName === 'PayPal'}
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
           </div>
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <Form.Check
               type="radio"
               id="Bizum"
-              label="Bizum"
+              label={
+                <>
+                  <img
+                    src="./images/Bizum.svg"
+                    alt="Bizum"
+                    className="icono-bizum"
+                  />{' '}
+                </>
+              }
               value="Bizum"
               checked={paymentMethodName === 'Bizum'}
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
-          </div>
+          </div> */}
           <div className="mb-3">
             <Button type="submit">Continue</Button>
           </div>
