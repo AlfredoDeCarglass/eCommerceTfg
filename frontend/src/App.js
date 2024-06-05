@@ -54,7 +54,7 @@ function App() {
               <LinkContainer to="/">
                 <Navbar.Brand>
                   <img
-                    src="sancho.ico"
+                    src="./sancho.ico"
                     width="35"
                     height="35"
                     className="d-inline-block align-top"
