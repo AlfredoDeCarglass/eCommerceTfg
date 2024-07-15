@@ -1,0 +1,22 @@
+.......Index.js........
+Es el punto de entrada (index.js) de una aplicación React.
+
+import App from './App'; --> Importa el componente principal de la aplicación, que generalmente se encuentra en el archivo App.js
+const root = ReactDOM.createRoot(document.getElementById('root')); --> Crea un objeto de raíz (root) del DOM
+root.render(...); --> Renderiza la aplicación dentro del elemento con el id 'root'. Utiliza <React.StrictMode> para activar el "modo estricto" de React, que ayuda a encontrar y corregir problemas en tu código.
+
+.......App.js.........
+Este código pertenece al componente principal de tu aplicación React
+
+<BrowserRouter> --> Este componente proporciona la funcionalidad del enrutador para tu aplicación. Envuelve todos los elementos que deben estar bajo el control del enrutador.
+El enrutamiento (o routing en inglés) en el contexto de desarrollo web se refiere a la práctica de gestionar y responder a las URL (direcciones web) dentro de una aplicación para determinar qué contenido debe mostrarse al usuario. En otras palabras, el enrutamiento permite que una aplicación web cambie su interfaz de usuario en respuesta a diferentes URL.
+<main> --> La sección principal de tu aplicación, que contiene el enrutador (<Routes>) con dos rutas (<Route>). Cada <Route> está asociada a un componente diferente.
+
+.......HomeScreen.js.........
+Componente funcional de React que representa la pantalla principal de tu aplicación
+
+
+import axios from 'axios'; --> Importa la biblioteca axios, que se utiliza para realizar solicitudes HTTP. En este caso, se usa para obtener datos de productos desde la API.
+onst [products, setProducts] = useState([]); --> Declara un estado local llamado products que almacenará la lista de productos. setProducts es la función que se utiliza para actualizar ese estado.
+useEffect(() => { ... }, []); --> Utiliza el hook useEffect para realizar una operación asincrónica cuando el componente se monta por primera vez. En este caso, se utiliza para realizar una solicitud a la API y actualizar el estado products con los datos obtenidos.
+Usinf theState Hook docu de react
