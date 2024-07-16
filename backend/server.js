@@ -10,7 +10,6 @@ import orderRouter from './routes/orderRoutes.js';
 import bizumRouter from './routes/bizumRoutes.js';
 
 dotenv.config();
-
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
@@ -20,15 +19,14 @@ mongoose
     console.log(err.message);
   });
 const app = express();
-
 app.use(cors());
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/api/keys/paypal', (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
 });
+
 app.use('/api', bizumRouter);
 
 app.use('/api/seed', seedRouter);

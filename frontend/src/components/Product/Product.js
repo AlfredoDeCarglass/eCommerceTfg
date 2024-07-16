@@ -1,10 +1,10 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import Rating from './Rating';
+import Rating from '../Rating';
 import axios from 'axios';
 import { useContext } from 'react';
-import { Store } from '../Store';
+import { Store } from '../../Store';
 
 function Product(props) {
   const { product } = props;

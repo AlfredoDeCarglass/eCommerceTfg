@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import HomeScreen from './screens/HomeScreen';
-import ProductScreen from './screens/ProductScreen';
+import HomeScreen from './screens/HomeScreen/HomeScreen';
+import ProductScreen from './screens/ProductScreen/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
@@ -21,18 +21,18 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { Store } from './Store';
-import CartScreen from './screens/CartScreen';
-import SigninScreen from './screens/SigninScreen';
+import CartScreen from './screens/CartScreen/CartScreen';
+import SigninScreen from './screens/SigninScreen/SigninScreen';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ShippingAddressScreen from './screens/ShippingAddressScreen';
-import SignupScreen from './screens/SignupScreen';
-import PaymentMethodScreen from './screens/PaymentMethodScreen';
-import PlaceOrderScreen from './screens/PlaceOrderScreen';
-import OrderScreen from './screens/OrderScreen';
-import OrderHistoryScreen from './screens/OrderHistoryScreen';
-import ProfileScreen from './screens/ProfileScreen';
+import ShippingAddressScreen from './screens/ShippingAddressScreen/ShippingAddressScreen';
+import SignupScreen from './screens/SignupScreen/SignupScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen/PaymentMethodScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen/PlaceOrderScreen';
+import OrderScreen from './screens/OrderScreen/OrderScreen';
+import OrderHistoryScreen from './screens/OrderHistoryScreen/OrderHistoryScreen';
+import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);

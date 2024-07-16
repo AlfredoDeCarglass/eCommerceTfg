@@ -3,7 +3,7 @@ import CheckoutSteps from '../components/CheckoutSteps';
 import { Helmet } from 'react-helmet-async';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { Store } from '../Store';
+import { Store } from '../../Store';
 import { useNavigate } from 'react-router-dom';
 
 export default function PaymentMethodScreen() {
@@ -55,24 +55,6 @@ export default function PaymentMethodScreen() {
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
           </div>
-          {/* <div className="mb-3">
-            <Form.Check
-              type="radio"
-              id="Bizum"
-              label={
-                <>
-                  <img
-                    src="./images/Bizum.svg"
-                    alt="Bizum"
-                    className="icono-bizum"
-                  />{' '}
-                </>
-              }
-              value="Bizum"
-              checked={paymentMethodName === 'Bizum'}
-              onChange={(e) => setPaymentMethod(e.target.value)}
-            />
-          </div> */}
           <div className="mb-3">
             <Button type="submit">Continue</Button>
           </div>

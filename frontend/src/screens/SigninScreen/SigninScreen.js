@@ -4,10 +4,10 @@ import Button from 'react-bootstrap/Button';
 import { Helmet } from 'react-helmet-async';
 import Axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
-import { Store } from '../Store';
+import { Store } from '../../Store';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { getError } from '../utils';
+import { getError } from '../../utils';
 
 export default function SigninScreen() {
   const { search } = useLocation();

@@ -1,0 +1,30 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main # Cambiar por la rama principal de tu repositorio
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+
+      - name: Instalar dependencias
+        run: npm install # Ajustar según tu gestor de paquetes
+
+      - name: Ejecutar pruebas Cypress
+        run: npm run cypress:test # Comando para ejecutar pruebas Cypress
+
+      - name: Despliegue en entorno de integración
+        if: success()
+        run: |
+          render deploy --branch main --env-id <ID_DEL_ENTORNO_DE_INTEGRACIÓN>
+
+      - name: Despliegue en entorno de producción
+        if: success() && github.ref == 'refs/heads/main'
+        run: |
+          render deploy --branch main --env-id <ID_DEL_ENTORNO_DE_PRODUCCIÓN>

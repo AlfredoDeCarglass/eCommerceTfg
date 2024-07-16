@@ -10,8 +10,8 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-import { Store } from '../Store';
-import { getError } from '../utils';
+import { Store } from '../../Store';
+import { getError } from '../../utils';
 import { toast } from 'react-toastify';
 
 function reducer(state, action) {

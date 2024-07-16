@@ -6,10 +6,10 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { Store } from '../Store';
+import { Store } from '../../Store';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { toast } from 'react-toastify';
-import { getError } from '../utils';
+import { getError } from '../../utils';
 import Axios from 'axios';
 import LoadingBox from '../components/LoadingBox';
 
