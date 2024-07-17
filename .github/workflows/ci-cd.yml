@@ -64,7 +64,7 @@ jobs:
 
   build-and-deploy-pro:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+   needs: test-int
 
     steps:
       - name: Checkout repository
