@@ -7,11 +7,11 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Store } from '../../Store';
-import CheckoutSteps from '../components/CheckoutSteps';
+import CheckoutSteps from '../../components/CheckoutSteps/CheckoutSteps';
 import { toast } from 'react-toastify';
 import { getError } from '../../utils';
 import Axios from 'axios';
-import LoadingBox from '../components/LoadingBox';
+import LoadingBox from '../../components/LoadingBox/LoadingBox';
 
 const reducer = (state, action) => {
   switch (action.type) {

@@ -1,4 +1,4 @@
-name: Desplegar y Probar Aplicación MERN
+name: Desplegar y Probar Aplicación e-Commerce
 
 on:
   push:
@@ -54,7 +54,7 @@ jobs:
           node-version: '14'
 
       - name: Esperar a que termine el despliegue
-        run: sleep 120
+        run: sleep 300
 
       - name: Ejecutar pruebas Cypress
         run: npm run test
@@ -118,3 +118,24 @@ jobs:
         run: npx cypress run
         env:
           CYPRESS_BASE_URL: ${{ secrets.CYPRESS_PRO_BASE_URL }}
+
+ test-pro:
+    runs-on: ubuntu-latest
+    needs: build-and-deploy-pro
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Esperar a que termine el despliegue
+        run: sleep 300
+
+      - name: Ejecutar pruebas Cypress
+        run: npm run test
+        env:
+          CYPRESS_BASE_URL: ${{ secrets.CYPRESS_INT_BASE_URL }}
