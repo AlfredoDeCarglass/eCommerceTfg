@@ -1,7 +1,7 @@
 {
   "name": "laManchaCommerce",
   "version": "1.0.0",
-  "description": "# Lessons",
+  "description": "Proyecto de eCommerce con MERN Stack (MongoDB, Express, React y Node)",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install --force && npm run build",
@@ -12,10 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/acreft/eCommerceTfg.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/acreft/eCommerceTfg/issues"
-  },
-  "homepage": "https://github.com/acreft/eCommerceTfg#readme"
+  "author": "Alfredo Crespo",
+  "license": "ISC"
 }

@@ -19,7 +19,7 @@ Bienvenido al proyecto de eCommerce desarrollado con la pila MERN (MongoDB, Expr
 - **Backend**: Node.js, Express
 - **Base de Datos**: MongoDB, Mongoose
 - **Autenticación**: JSON Web Tokens (JWT)
-- **Despliegue**: Heroku, MongoDB Atlas
+- **Despliegue**: Render.com, MongoDB Atlas
 
 ## ⚙️ Requisitos
 
@@ -69,6 +69,15 @@ Bienvenido al proyecto de eCommerce desarrollado con la pila MERN (MongoDB, Expr
 1. Regístrate como un nuevo usuario o inicia sesión con una cuenta existente.
 2. Explora los productos disponibles, añade productos al carrito y realiza compras.
 3. Como administrador, gestiona los productos, categorías y órdenes.
+
+## Entornos
+
+Estos son los entornos que se disponen para este eCommerce:
+
+- INT: https://lamanchacommerce-int.onrender.com/
+- PRO: https://ecommercetfg-pro.onrender.com/
+
+Render.com apaga o pone en un estado de hibernación las aplicaciones que no han tenido tráfico durante un tiempo determinado.Cuando un usuario accede después de un tiempo de inactividad, la aplicación necesita "despertarse", lo que causa un retraso en la carga de unos 40 seg. Esto es debido a la versión gratuita de Render.com.
 
 ## 📸 Capturas de Pantalla
 

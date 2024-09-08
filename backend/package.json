@@ -1,8 +1,8 @@
 {
-  "name": "backend",
-  "type": "module",
+  "name": "ecommerce-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend del proyecto de eCommerce",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",

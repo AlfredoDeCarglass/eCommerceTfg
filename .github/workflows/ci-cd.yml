@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Comando de Inicio
-        run: npm start # Corregido error tipográfico en 'npm start'
+        run: npm start 
 
       - name: Desplegar en Render (Integración)
         env:
@@ -63,7 +63,7 @@ jobs:
 
   build-and-deploy-pro:
     runs-on: ubuntu-latest
-    needs: test-int # Corregida la sangría
+    needs: test-int 
 
     steps:
       - name: Clonar repositorio

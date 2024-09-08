@@ -1,7 +1,8 @@
 {
-  "name": "frontend",
+  "name": "ecommerce-frontend",
+  "version": "1.0.0",
+  "description": "Frontend del proyecto de eCommerce",
   "proxy": "http://localhost:4000",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
